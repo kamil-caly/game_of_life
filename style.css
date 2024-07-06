@@ -1,0 +1,67 @@
+:root {
+    --cell-width: 40;
+    --cell-height: 80;
+}
+
+body {
+    background-color: #404040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 880px;
+}
+
+.board {
+    max-width: 1600px;
+    max-height: 800px;
+    background-color: #9c9c9c;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.btn {
+    width: 140px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #2a4e97;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #2a4e97;
+}
+
+.dead_cell {
+    background-color: #7e7e7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 18px;
+    min-width: 18px;
+    margin: 1px;
+}
+
+.life_cell {
+    background-color: #ffff00 !important;
+    min-height: 18px;
+    min-width: 18px;
+    margin: 1px;
+}
